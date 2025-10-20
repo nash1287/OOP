@@ -4,7 +4,7 @@ class Encrypter {
     fun encrypt (input: String): String {
 
         return input
-            .map { char -> dict.get(key = char) }
+            .map { char -> dict.get(char) }
             .joinToString("")
     }
 
